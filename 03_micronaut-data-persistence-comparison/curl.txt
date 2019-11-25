@@ -1,0 +1,10 @@
+curl http://localhost:8080/v1/people -d '{"username":"Raul","email":"rul@gmail.com", "firstName":"Raul", "lastName":"Estrada"}' -H "Content-Type: application/json" -v
+
+
+watch 'psql -h localhost -p 5432 -U user comparison -c "select count(*) from people"'
+
+
+wrk -c 20 -t 20 -d 30s http://localhost:8080/ -s nuevo_cliente.lua
+
+
+mn create-app mn-data-jdbc --features java,flyway,lombok -l java
