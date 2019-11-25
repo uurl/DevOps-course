@@ -1,0 +1,9 @@
+include 'micronaut:mn-data-jdbc'
+findProject(':micronaut:mn-data-jdbc')?.name = 'mn-data-jdbc'
+include 'micronaut:mn-data-jpa'
+findProject(':micronaut:mn-data-jpa')?.name = 'mn-data-jpa'
+include 'spring-boot:jdbc'
+findProject(':spring-boot:jdbc')?.name = 'jdbc'
+include 'spring-boot:jpa-spring-data'
+findProject(':spring-boot:jpa-spring-data')?.name = 'jpa-spring-data'
+

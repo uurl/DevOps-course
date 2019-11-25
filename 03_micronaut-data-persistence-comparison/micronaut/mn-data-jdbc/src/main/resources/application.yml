@@ -1,0 +1,16 @@
+micronaut:
+  application:
+    name: mn-data-jdbc
+flyway:
+  datasources:
+    default:
+      locations: classpath:db/migration
+datasources:
+  default:
+    pooled: true
+    jmxExport: true
+    dbCreate: none
+    url: ${JDBC_URL:`jdbc:postgresql://localhost:5432/comparison`}
+    driverClassName: org.postgresql.Driver
+    username: ${POSTGRES_USER:user}
+    password: ${POSTGRES_PASSWORD:secret}

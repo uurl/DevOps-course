@@ -1,0 +1,5 @@
+micronaut:
+  application:
+    name: metrics-demo
+  server:
+    port: 8888
