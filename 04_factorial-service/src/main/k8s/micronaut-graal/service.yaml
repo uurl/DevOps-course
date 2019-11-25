@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: factorial-mn-graal
+  labels:
+    name: factorial-mn-graal
+spec:
+  ports:
+  - port: 8080
+    targetPort: 8080
+    protocol: TCP
+    name: app
+  selector:
+    name: factorial-mn-graal
