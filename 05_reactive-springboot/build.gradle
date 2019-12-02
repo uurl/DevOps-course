@@ -53,7 +53,6 @@ jib {
 	from {
 		image = "openjdk:8-jdk-alpine"
 	}
-
 	to {
 		image= "restrada/spring-webflux:0.0.1"
 	}
