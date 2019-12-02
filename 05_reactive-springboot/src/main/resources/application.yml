@@ -1,0 +1,12 @@
+spring:
+    profiles:
+      active: prod
+    data:
+        cassandra:
+          keyspace-name: coin_mx
+          port: 9042
+          contact-points: cassandra
+app:
+    api:
+      client:
+        uri: https://api.bitspwdo.com/v3/
