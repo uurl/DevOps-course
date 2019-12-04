@@ -1,0 +1,5 @@
+brave/webmvc/Backend.class
+brave/webmvc/AppConfiguration.class
+brave/webmvc/TracingConfiguration.class
+brave/webmvc/Initializer.class
+brave/webmvc/Frontend.class
