@@ -1,0 +1,3 @@
+cd /home/nxtlab/SmartBear/SoapUI-5.5.0/bin/.
+
+sh ./testrunner.sh -sTestSuite1 /home/nxtlab/Escritorio/REST-Project-1-soapui-project.xml
